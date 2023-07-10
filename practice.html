@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="display()">display</button><br>
+    <div class="thing">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing <br>
+             elit. Harum fuga repellat ipsam blanditiis alias nam <br>
+              iusto, sit nihil eius dolore possimus veniam maiores <br>
+               numquam voluptatibus reiciendis sint quos ex  <br>
+               eligendi!</p>
+    </div>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .thing{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 0;
+            height: 500px;
+            background: #000;
+            transition: all 3s;
+            font-size: x-large;
+            color: white;
+            
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+            width: 220px;
+            height: 40px;
+            background: #000;
+            color: #fff;
+            border: none;
+
+        }
+        p{
+            color: white;
+            display: none;
+        }
+    </style>
+    <script>
+        let div = document.querySelector('.thing');
+        let para = document.querySelector('p');
+        let btn = document.querySelector('button');
+        function display() {
+            div.style.width = '700px'
+            para.style.display = 'flex'
+        }
+    </script>
+</body>
+</html>

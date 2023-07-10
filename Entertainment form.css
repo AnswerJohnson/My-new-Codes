@@ -1,0 +1,60 @@
+*{
+    font-family: system-ui;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #d2d3d3;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 20px black;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background: transparent;
+}
+input{
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 9px;
+    outline: none;
+    padding-left: 10px;
+}
+.radio{
+    width: auto;
+    height: auto;
+}
+select{
+    border-radius: 10px;
+    margin-left: 8px;
+    border: none;
+    width: 300px;
+    height: 40px;
+    outline: none;
+
+}
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+label{
+    color: rgb(30, 43, 72);
+}
+H2{
+    font-size: 20px;
+}
